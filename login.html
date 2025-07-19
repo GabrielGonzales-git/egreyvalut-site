@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>eGreyVault Login</title>
+    <style>
+        body { font-family: Arial; text-align: center; padding-top: 100px; background: #111; color: white; }
+        input { padding: 10px; margin: 10px; }
+        button { padding: 10px 20px; background: #333; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>eGreyVault Access</h1>
+    <input type="password" id="pass" placeholder="Enter password">
+    <button onclick="check()">Login</button>
+    <script>
+        function check() {
+            var input = document.getElementById("pass").value;
+            if(input === "vaultaccess") {
+                window.location.href = "vault.html";
+            } else {
+                alert("Incorrect password");
+            }
+        }
+    </script>
+</body>
+</html>
